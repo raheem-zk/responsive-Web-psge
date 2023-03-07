@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" id="emblem" width="120px" height="120px" viewBox="0 0 120 120">
+                    <defs>
+                        <linearGradient x1="0%" y1="0%" x2="100%" y2="100%" id="emblem-grad">
+                            <stop stop-color="#FF6E41" offset="0%"/>
+                            <stop stop-color="#F86955" offset="100%"/>
+                        </linearGradient>
+                    </defs>
+                    <circle fill="url(#emblem-grad)" cx="60" cy="60" r="60"/>
+                    <g transform="translate(12 12)">
+                        <g transform="translate(48 48) scale(1.2)">
+                            <path d="M47.5,88 L47.5,73.5 M27.5669873,82.3910162 L34.8169873,69.8336478 M13.1089838,67.5669873 L25.6663522,60.3169873 M8,47.5 L22.5,47.5 M13.6089838,27.5669873 L26.1663522,34.8169873 M28.4330127,13.1089838 L35.6830127,25.6663522 M48.5,8 L48.5,22.5 M68.4330127,13.6089838 L61.1830127,26.1663522 M82.8910162,28.4330127 L70.3336478,35.6830127 M88,48.5 L73.5,48.5 M82.3910162,68.4330127 L69.8336478,61.1830127 M67.5669873,82.8910162 L60.3169873,70.3336478" id="rays" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round" stroke-dasharray="6,5,4,7" opacity="0" transform="translate(-48 -48)">
+                                <animateTransform attributeName="transform" attributeType="XML" type="rotate" from="0 48 48" to="360 48 48" additive="sum" dur="10s" repeatCount="indefinite"/>
+                                <animate attributeName="stroke-dashoffset" attributeType="XML" from="0" to="200" dur="10s" repeatCount="indefinite"/>
+                                <animate attributeName="opacity" attributeType="XML" from="0" to="1" dur="0.15s" begin="emblem.mouseenter" repeatCount="1" restart="whenNotActive" fill="freeze"/>
+                                <animate attributeName="opacity" attributeType="XML" from="1" to="0" dur="0.5s" begin="emblem.mouseleave" repeatCount="1" restart="whenNotActive" fill="freeze"/>
+                            </path>
+                            <animateTransform attributeName="transform" attributeType="XML" type="scale" from="0 0" to="1 1" additive="sum" dur="0.5s" repeatCount="1" restart="whenNotActive" fill="freeze" begin="emblem.mouseenter"/>
+                        </g>
+                        <path d="M36,32 L60,32 C62.209139,32 64,33.790861 64,36 L64,60 C64,62.209139 62.209139,64 60,64 L36,64 C33.790861,64 32,62.209139 32,60 L32,36 C32,33.790861 33.790861,32 36,32 Z M50,46 L50,40 L46,40 L46,46 L40,46 L40,50 L46,50 L46,56 L50,56 L50,50 L56,50 L56,46 L50,46 Z" fill="#FFFFFF" transform="translate(0 -8)">
+                            <animateTransform attributeName="transform" attributeType="XML" type="translate" from="0 -8" to="0 0" dur="0.15s" repeatCount="1" restart="whenNotActive" fill="freeze" begin="emblem.mouseenter"/>
+                            <animateTransform attributeName="transform" attributeType="XML" type="translate" from="0 0" to="0 -8" dur="0.15s" repeatCount="1" restart="whenNotActive" fill="freeze" begin="emblem.mouseleave"/>
+                        </path>
+                        <text font-size="12" font-weight="bold" fill="#FFFFFF">
+                            <tspan x="48" y="72" text-anchor="middle">Now Free!</tspan>
+                            <animate attributeName="opacity" attributeType="XML" from="0" to="1" dur="0.5s" begin="emblem.mouseleave" repeatCount="1" restart="whenNotActive" fill="freeze"/>
+                            <animate attributeName="opacity" attributeType="XML" from="1" to="0" dur="0.15s" begin="emblem.mouseenter" repeatCount="1" restart="whenNotActive" fill="freeze"/>
+                        </text>
+                    </g>
+                </svg>
