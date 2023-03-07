@@ -1,0 +1,502 @@
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    /* font-family: ""; */
+    box-sizing: border-box;
+}
+header{
+    background-color: aquamarine;
+    width: 100%;
+    height: 80px;
+    background: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 100px;
+}
+.logo{
+    background-image: url(https://www.addthis.com/dietsite-assets/images/nav/logo.svg);
+    background-size: 131px 25px;
+    height: 30px;
+    background-repeat: no-repeat;
+    width: 150px;
+}
+.hamburger{
+    display: none;
+}
+.nav-bar ul{
+    display: flex;
+}
+.nav-bar ul li,a{
+    display: block;
+    /* color: #fefefe; */
+    /* font-size: 17px; */
+    text-decoration: none;
+    padding-left: 10px;
+    /* border-radius: 50px; */
+    /* transition: 0.2s; */
+    margin: 0 5px;
+    color: black;
+}
+.nav-bar ul li{
+    padding-top: 20px;
+}
+.nav-bar ul a:hover{
+    text-decoration: underline;
+}
+@media screen and (max-width:1320px) {
+    header{
+        padding: 0 50px;
+    }
+}
+@media screen and (max-width:110px) {
+    header{
+        padding: 0 30px;
+    }
+}
+
+
+
+@media screen and (max-width:720px) {
+
+    .hamburger{
+        display: block;
+        cursor: pointer;
+    }
+    .hamburger  .line{
+        width: 30px;
+        height: 3px;
+        background: #000000;
+        margin: 6px 0;
+    }
+    .nav-bar{
+        height: 0px;
+        position: absolute;
+        top: 80px;
+        left: 0;
+        right: 0;
+        width: 100vW;
+        background: rgb(255, 255, 255);
+        transition: 0.2s;
+        overflow: hidden;
+    }
+    .nav-bar.active{
+        width: auto;
+        height: 500px;
+        overflow: hidden;
+        background-color: #f9f9f9;
+    }
+    .nav-bar ul{
+        display: block;
+        width: fit-content;
+        margin: 80px auto 0 auto;
+        text-align: center;
+        opacity: 1;
+    }
+    .nav-bar.active ul{
+        opacity: 1;
+    }
+    .nav-bar ul li,a{
+        font-size: 20px;
+    }
+}
+
+/* section */
+.h1-text h1{
+    padding-top: 50px;
+    font-weight: 700 !important;
+    font-size: 4rem !important;
+    line-height: 4rem !important;
+}
+.h1-text span{
+    color: #0088f7;
+}
+.h1-text p{
+    padding-top: 10px;
+    font-size: 24px;
+    letter-spacing: normal !important;
+}
+.right-side{
+    display: flex;  
+    background-image: url(https://www.addthis.com/dietsite-assets/images/homepage/watch-video.svg);
+    background-repeat: no-repeat;
+    /* background-size: 600px 370px; */
+    position: relative;
+}
+.btn-right{
+    /* display:flex; */
+    position: relative;  
+
+    color: blue;
+    border: none;
+    background: #ffffff;
+    top: 165px;
+    left: 186px;
+    width: 120px;
+    height: 50px; 
+}
+.sosial-media{
+    display: flex;
+}
+.media{
+    padding-left: 10px;
+}
+.btn-right:hover{
+    border-radius: 4px solid blue;
+    background: #e9e9f5;
+}
+.btn-left-sec:hover{
+    text-decoration: underline;
+}
+.google{
+    width: 55px;
+    /* height: 100px; */
+    background: #701515;
+    background-color: white;
+    border: 2px solid gainsboro;
+    padding: 10px;
+}
+.google:hover{
+    border: 2px solid blue;
+}
+.section-2 p{
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 0 1.5em 0;
+    justify-content: center;
+    font-size: 18px !important;
+    text-align: left !important;
+}
+.section-2 h1{
+    padding-top: 85px;
+    display: flex;
+    justify-content: center;
+    font-weight: 700 !important;
+    font-size: 48px !important;
+    text-align: left !important;
+}
+@media screen and (max-width:1020px)  {
+    .right-side{
+        display: none;
+    }
+}
+/* midle sec */
+.midle-sec ul li a{
+    /* display: none; */
+    background-color: #ededed; 
+    font-size: 17px;
+    font-weight: bold;
+
+}
+.left-ero{
+    width: 70px;
+    /* background-color: #006eff;    */
+}
+.left-ero :hover{
+    background-color: #000203;   
+
+}
+.midle-sec a:hover{
+    background-color: #d8d8d8;
+    /* background-color: #84a0c5;    */
+
+    margin-right: 25px;
+}
+.img-slesh{
+    width: 500px;
+}
+.h2-right-sec{
+    padding-top: 25px;
+    font-weight: 400;
+}
+.btnSec{
+    background-color: #006eff;
+    color: white;
+}
+.btnSec:hover{
+    background-color: #0088f7;
+}
+.rightBtn{
+    display: flex;
+}
+.hidden-s{
+    display: none;
+}
+@media screen and (max-width:860px) {
+    .midle-sec ul li a{
+        display: none;
+    }
+    .right-sec{
+        margin: auto;
+        padding-left: 20%;
+    }
+    .hidden-s{
+        display: block;
+    }
+}
+
+@media screen and (max-width:387px) {
+    .right-sec{
+        margin: auto;
+        padding-left: auto;
+    }
+}
+/*  */
+.sec-3-parant{
+    padding-top: 300px;
+    /* display: flex; */
+    justify-content: center;
+}
+.sec-3{
+
+    color: white;
+    font-weight: 700 !important;
+    padding-top: 150px;
+    background-image: linear-gradient(-135deg, #3D41DA 0%, #1E1F44 100%);
+    width: 100%;
+    /* height: 5000px; */
+}
+.h2-tag-sec-3{
+    padding: 0 130px 30px 130px;
+    font-size: 40px;
+    font-weight: 900;
+}
+.sec-chaild{
+    display: flex;
+    justify-content: center;
+}
+.p-tag-sec-3{
+    display: flex;
+    justify-content: center;
+    font-size: small;
+    font-weight: 100;
+}
+.img-video{
+    width: 300px;
+
+}
+.play-btn{
+    width: 60px;
+    position: relative;
+    right: 105px;
+    top: -30px;
+}
+.play-btn:hover {
+    background: #ebebeb;
+    border-radius: 48%;
+}
+.img-flex{
+    display: flex;
+    justify-content: end;
+}
+.btn-sec-4{
+    border: 2px solid #3D41DA;
+    color: #006eff;
+    font-size: large;
+    font-size: smaller;
+    padding: 10px 0 10px;
+}
+.btn-sec-4:hover{
+    background-image: linear-gradient(-135deg, #3D41DA 0%, #1E1F44 100%);
+    color: white;
+    border: 2px solid #3D41DA;
+}
+.row{
+    font-family: 'Montserrat', sans-serif !important;
+}    
+.h4-sec-4{
+    font-size: 18px;
+    font-weight: 600;
+}
+.img-parant-sec-4{
+    display: flex;
+    justify-content: center;
+}
+.img-parant-sec{
+    margin-top: 50px;
+}
+
+@media screen and (max-width: 479px){
+    .h2-tag-sec-3{
+        font-size: 24px !important;
+        /* font-weight: 200; */
+        padding: 3%;
+    }
+    .sec-3-parant{
+        padding-top: 0%;
+    }
+    
+}
+@media screen and (max-width:780px) {
+    .img-video{
+        width: 100%;
+    }
+    .left-3-sec{
+        width: 100%;
+    }
+    .img-flex{
+        display: flex;
+        justify-content: center;
+    }
+}
+/*  */
+.sec-last{
+    /* background-image: url(https://www.addthis.com/dietsite-assets/images/homepage/book-left.svg); */
+    background: #BDF5E1;
+    /* height: 500px; */
+    width: 100%;
+}
+.h3-sender{
+    display: flex;
+    justify-content: center;
+    /* margin: 20px 0; */
+    font-size: 48px;
+    font-weight: 700;
+    color: #1E1F44;
+}
+.p-sender{
+    text-align: center;
+}
+.btn-senter{
+    display: flex;
+    justify-content: center;
+}
+.btn-senter-a{
+    background-color: #3D41DA;
+    color: white;
+}
+.btn-senter-a:hover{
+    background-color: #171a81;
+    /* background: #000000; */
+}
+.book-3{
+    height:300px;
+    /* margin-top: 60px; */
+}
+.img-book-3{
+    padding-top: 100px;
+}
+.sircle-img{
+    display: flex;
+    justify-content: center;
+    margin-top: -60px;
+}
+.sircle-img:hover{
+}
+.sircle-img-width{
+    width: 100px;
+}
+.book-2{
+    /* display: block; */
+    height: 430px;
+}
+@media screen and (max-width:880px) {
+    .book-1{
+        display: none;
+    }
+    .book-3{
+        height:80%;
+    }
+
+}
+/* footer */
+.footer-text ul h6{
+    font-weight: bold;
+    padding-left: 15px;
+}
+.footer-text ul a:hover{
+    text-decoration: underline;
+    color: #626262;
+}
+.footer-text ul a{
+    padding-top: 13px;
+    color: #626262;
+    font-size: 14px;
+    font-weight: 100;
+}
+.footer-last ,p{
+   
+    padding-left: 40px;
+    font-size: 14px;
+    font-weight: 100;
+    color: #999;
+    /* text-align: center; */
+
+}
+.footer-last{
+    /* width: fit-content; */
+}
+.parant-footer{
+    width: 100%;
+
+}
+.mobile{
+    width: fit-content;
+}
+@media screen and (max-width:580px) {
+    .footer-last ,p{
+        text-align: center;
+        padding-left: 4%;
+    }
+    .mobile{
+        text-align: center;
+        padding-left: 2%;
+
+    }
+}
+.icon-1{
+    width: 48px;
+    height: 48px;
+    background-color: rgb(59, 89, 152);
+
+}
+.icon-2{
+    width: 48px;
+    height: 48px;
+    background-color: #0f97f9
+}
+.icon-3{
+    width: 48px;
+    height: 48px;
+    background-color: #7b8084;
+}
+.icon-4{
+    width: 48px;
+    height: 48px;
+    background-color: #373a3c;  
+}
+.icon-5{
+    width: 48px;
+    height: 48px;
+    background-color:#ff6550;
+}
+.left-soial-media{
+    position: fixed;
+    top: 130px;
+}
+.left-soial-media-responce{
+    display: flex;
+    flex-direction: row;
+    position: fixed;
+    bottom: 0px;
+    display: none;
+
+}
+@media screen and (max-width:870px) {
+    .left-soial-media{
+        display: none;
+    }
+    .left-soial-media-responce{
+        display: block;
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+    }
+    .icon-5,.icon-1,.icon-2,.icon-3,.icon-4{
+        width: 30%;
+        display: flex;
+    }
+}
